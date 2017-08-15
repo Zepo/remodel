@@ -37,7 +37,7 @@ function createValueObjectObjCPlugIn(plugin:ValueObject.Plugin) : ValueObjectObj
     },
 
     classMethods: function(typeInformation:ValueObject.Type):ObjC.Method[] {
-      return [];
+      return plugin.classMethods ? plugin.classMethods(typeInformation) : [];
     },
 
     comments: function(typeInformation:ValueObject.Type):ObjC.Comment[] {

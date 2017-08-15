@@ -971,6 +971,9 @@ export function createPlugin():ValueObject.Plugin {
     attributes: function(valueType:ValueObject.Type):ValueObject.Attribute[] {
       return [];
     },
+    classMethods: function(valueType:ValueObject.Type):ObjC.Method[] {
+      return [];
+    },
     fileTransformation: function(request:FileWriter.Request):FileWriter.Request {
       return request;
     },

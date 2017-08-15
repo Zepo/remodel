@@ -96,6 +96,9 @@ export function createPlugin():ValueObject.Plugin {
         fetchStatusAttributeForValueType(valueType)
       ];
     },
+    classMethods: function(valueType:ValueObject.Type):ObjC.Method[] {
+      return [];
+    },
     fileTransformation: function(request:FileWriter.Request):FileWriter.Request {
       return request;
     },

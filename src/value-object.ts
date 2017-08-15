@@ -45,6 +45,7 @@ export interface Plugin {
   additionalFiles: (valueType:Type) => Code.File[];
   additionalTypes: (valueType:Type) => Type[];
   attributes: (valueType:Type) => Attribute[];
+  classMethods: (valueType:Type) => ObjC.Method[];
   fileTransformation:(writeRequest:FileWriter.Request) => FileWriter.Request;
   fileType: (valueType:Type) => Maybe.Maybe<Code.FileType>;
   forwardDeclarations: (valueType:Type) => ObjC.ForwardDeclaration[];
